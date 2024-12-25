@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9fa;
+}
+
+h1 {
+    text-align: center;
+    padding-left: 25px;
+}
+
+.classes-container {
+    width: 600px;
+    max-width: 90%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.classes-item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.classes-item button {
+    cursor: pointer;
+    padding: 7px 12px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.classes-item button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.classes-item button:hover {
+    transform: scale(1.05);
+}
+
+.classes-item button.cancel-btn {
+    background-color: red;
+    color: white;
+    margin-left: 10px;  
+    
+}
